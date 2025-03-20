@@ -1,0 +1,34 @@
+{
+    "dogs": [
+        {
+            "id": 1,
+            "name": "Peanut",
+            "image": "https://www.petinsurancequotes.com/app/uploads/2018/10/bichon-frise-dog-insurance.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Jack-Jack",
+            "image": "https://www.k9web.com/wp-content/uploads/2021/02/close-up-portrait-of-jackabee-780x633.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Jolie",
+            "image": "https://www.fishermountainpuppies.com/wp-content/uploads/elementor/thumbs/04-HARPER-Red-Maltipoo-Puppy-pwibs8gahax3r6jzwrrhoc86kc9rbzsnhuj30qzo3c.jpg"
+        },
+        {
+            "id": 4,
+            "name": "Dusty",
+            "image": "https://www.happypawshavanese.com/images/della-2.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Beau",
+            "image": "https://www.dogbreedslist.info/uploads/dog-pictures/basset-hound-2.jpg"
+        },
+        {
+            "id": 6,
+            "name": "George",
+            "image": "https://a-z-animals.com/media/animals/images/original/border_terrier.jpg"
+        }
+    ]
+}

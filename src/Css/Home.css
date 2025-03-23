@@ -1,0 +1,16 @@
+.home{
+    background-color: rgb(208, 250, 192);
+    font-family: Verdana;
+    
+}
+.home-image {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+.p {
+    color:rgb(4, 68, 7)
+}
+.home-page-h2 {
+    color: rgb(8, 180, 22);
+}

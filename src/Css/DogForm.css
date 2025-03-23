@@ -1,0 +1,31 @@
+.form {
+    margin: 20px;
+    padding: 0px;
+    border: 2px solid rgb(228, 206, 91);
+    background-color: rgb(249, 239, 208);
+    
+}
+.h3 {
+    color: rgb(143, 99, 35);
+    margin: 10px;
+    text-align: center;
+}
+.dog-name {
+    padding: 20px;
+    color:#ab7523;
+
+}
+.image {
+    padding: 20px;
+    color:#ab7523;
+}
+.input{
+    border-color: rgba(212, 127, 36, 0.305);
+    background-color: rgb(248, 246, 244);
+}
+.button {
+    font-family: 'Verdana';
+    color:rgb(112, 79, 29);
+    border-color: rgba(162, 96, 25, 0.666);
+    background-color:  rgb(248, 246, 244);
+}

@@ -1,0 +1,16 @@
+.dog-card {
+    border: 3px solid rgba(65, 203, 11, 0.734);
+    background-color: rgba(127, 251, 32, 0.399);
+}
+.dog-card-image{
+    size: 20px;
+}
+.dog-card-name{
+    color: rgb(19, 123, 20);
+}
+.adopt-button {
+  font-size: 23px;
+  color: rgb(127, 30, 9);
+  background-color: rgb(251, 136, 94);
+  border-color: rgb(245, 196, 196);
+}

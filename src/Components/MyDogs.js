@@ -5,7 +5,7 @@ import DogCard from "./DogCard";
 function MyDogs() {
     return (
         <div className="my-dogs">
-         <DogCard/>
+         
         </div>
     )
 }

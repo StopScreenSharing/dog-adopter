@@ -1,10 +1,14 @@
 import React from "react";
 import DogCard from "./DogCard";
+import '../Css/DogsPage.css';
 
-function DogsPage() {
+function DogsPage({ dogs }) {
     return (
- <div>
-    <DogCard/>
+ 
+ <div className="dog-container">
+    {dogs.map((dog) => (
+        <DogCard key={dog.id} dog={dog}/>
+    ))}
  </div>
  )
 }

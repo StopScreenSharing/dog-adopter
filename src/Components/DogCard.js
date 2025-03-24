@@ -1,14 +1,21 @@
 import React from "react";
 import '../Css/DogCard.css'
 
-function DogCard() {
+function DogCard({ dog }) {
     return (
     <div className="dog-card">
-        <img src="Image"  alt= "dog" className="dog-card-image"/>
-        <h2 className="dog-card-name">Dog Name</h2>
-        <span>
+        <img src={dog.image}  
+        alt= "dog" 
+        className="dog-card-image"
+        style={{height:'auto',
+            width: '200px',
+            borderRadius: '10px'}}
+        />
+        <div className="card-content">
+            <h2 className="dog-card-name">{dog.name}</h2>
             <button className="adopt-button">Adopt!</button>
-        </span>
+            <button className="rehome-button">Rehome</button>
+        </div>
     </div>
     )
 }

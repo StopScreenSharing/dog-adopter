@@ -1,8 +1,9 @@
 .form {
     margin: 20px;
-    padding: 0px;
+    padding: 10px;
     border: 2px solid rgb(228, 206, 91);
     background-color: rgb(249, 239, 208);
+    text-align: center;
     
 }
 .h3 {

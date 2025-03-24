@@ -1,9 +1,19 @@
 .dog-card {
     border: 3px solid rgba(65, 203, 11, 0.734);
     background-color: rgba(127, 251, 32, 0.399);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    box-sizing: border-box;
+}
+.card-content{
+    padding: 15px;
 }
 .dog-card-image{
-    size: 20px;
+    width: 100%;
+    height: auto;
 }
 .dog-card-name{
     color: rgb(19, 123, 20);
@@ -13,4 +23,13 @@
   color: rgb(127, 30, 9);
   background-color: rgb(251, 136, 94);
   border-color: rgb(245, 196, 196);
+  margin: 5px;
+}
+.rehome-button{
+  font-size: 23px;
+  color: rgb(24, 50, 143);
+  background-color: rgba(88, 99, 107, 0.586);
+  border-color: rgb(160, 161, 164);
+  margin: 5px;
+
 }

@@ -1,4 +1,5 @@
 .dog-card {
+    position: relative;
     border: 3px solid rgba(65, 203, 11, 0.734);
     background-color: rgba(127, 251, 32, 0.399);
     padding: 10px;
@@ -32,4 +33,12 @@
   border-color: rgb(160, 161, 164);
   margin: 5px;
 
+}
+.delete-button{
+  background-color: brown;
+  color: antiquewhite;
+ position: absolute;
+ top: 10px;
+ right: 20px;
+ 
 }

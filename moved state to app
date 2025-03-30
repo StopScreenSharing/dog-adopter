@@ -1,0 +1,47 @@
+[33mcommit eb6d4ebe1fc5f204965c86e4a7c561aa0145db0a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Fri Mar 28 16:07:53 2025 -0600
+
+    moved state to app
+
+[33mcommit 92c50184b1442c1a457017bd919bf7eb7fc32163[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Sun Mar 23 22:46:29 2025 -0600
+
+    fixed some css and added POST request for the dog form
+
+[33mcommit 08254ca041f8b74ec863c456b7f1977e69faa66a[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Sun Mar 23 13:52:38 2025 -0600
+
+    finished most of css
+
+[33mcommit 37b00ac3fe0af17bd2e7acd72b5b79b854a0a3e9[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Thu Mar 20 17:09:50 2025 -0600
+
+    got json server running
+
+[33mcommit dd41bcb654b7e3d277b5b0f7813813231059904e[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Thu Mar 20 15:38:34 2025 -0600
+
+    added more compnents and dbjson
+
+[33mcommit 20b3ced52f716fd66a7eaa843e7b813ddbb963d9[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Mon Mar 17 17:20:40 2025 -0600
+
+    made first components
+
+[33mcommit ef1d687bb9aa606d802d2ba3098c691bd65e9bef[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Mon Mar 17 16:26:16 2025 -0600
+
+    update read me
+
+[33mcommit dacda4485ff7d1dcbc723dba60dde27abd1c58e4[m
+Author: aidadieudonne <aidaharing10@gmail.com>
+Date:   Mon Mar 17 16:24:32 2025 -0600
+
+    first commit

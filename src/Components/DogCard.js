@@ -3,10 +3,11 @@ import { Outlet, useOutletContext } from 'react-router-dom';
 import '../Css/DogCard.css'
 
 function DogCard({ dog, onDeleteDog }) {
+    
 
     return (
     <div className="dog-card">
-        <button className='delete-button' onClick={onDeleteDog}>X</button>
+        <button className='delete-button' onClick={() => onDeleteDog(dog.id)}>X</button>
         <img src={dog.image}  
         alt= "dog" 
         className="dog-card-image"

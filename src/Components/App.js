@@ -35,8 +35,9 @@ function App() {
     fetch(`http://localhost:3000/dogs/${dogId}`, {
       method: 'DELETE',
     })
+    .then(() => {
       setDogs(dogs.filter(dog => dog.id !== dogId));
-
+    })
   }
   
   return (

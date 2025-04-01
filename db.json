@@ -31,9 +31,9 @@
       "image": "https://static.scientificamerican.com/sciam/cache/file/1FD432BD-1DC9-4EE3-B2F3494EBAE7DCAE_source.jpg"
     },
     {
-      "id": "d3d4",
-      "name": "Bo",
-      "image": "https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_4x3.jpg"
+      "id": "e955",
+      "name": "Chicken",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRInKFKLo7HSnAQ5DGzi7s0OwOSoQ7qxFHyrA&s"
     }
   ],
   "cats": [
@@ -66,6 +66,11 @@
       "id": 6,
       "name": "Billy",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCsqRYLAFDdL4Ix_AHai7kNVyoPV9Ssv1xg&s"
+    },
+    {
+      "id": "7296",
+      "name": "Milk",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/960px-Cat_August_2010-4.jpg"
     }
   ]
 }

@@ -5,13 +5,17 @@ import CatCard from "./CatCard";
 
 
 function CatsPage() {
+
+    const { cats, onDeleteCat, onAddCat } = useOutletContext();
     return (
         <div className="form">
             <div className="form">
-            <CatForm />
+            <CatForm onAddCat={onAddCat}/>
             </div>
             <div className="container">
-                <CatCard />
+                {cats.map(cat => (
+                    <CatCard key={cat.id} cat={cat} onDeleteCat={onDeleteCat}/>
+                ))}
             </div>
 
             

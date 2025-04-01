@@ -42,6 +42,29 @@ function App() {
     .then(r => r.json())
     .then(cats => setCats(cats))
   }, [])
+
+  const handleAddCat = (newCat) => {
+    fetch('http://localhost:3000/cats', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(newCat)
+    })
+    .then(response => response.json())
+    .then(addedCat => {
+      setCats([...cats, addedCat]);
+    });
+  }
+
+  const handleDeleteCat = (catId) => {
+    fetch(`http://localhost:3000/cats/${catId}`, {
+      method: 'DELETE',
+    })
+    .then(() => {
+      setCats(cats.filter(cat => cat.id !== catId));
+    })
+  }
   
   return (
    <div className='app'>
@@ -53,7 +76,9 @@ function App() {
         dogs: dogs, 
         onAddDog: handleAddDog, 
         onDeleteDog: handleDeleteDog,
-        cats: cats
+        cats: cats,
+        onAddCat: handleAddCat,
+        onDeleteCat: handleDeleteCat
         }} />
    </div>
   );

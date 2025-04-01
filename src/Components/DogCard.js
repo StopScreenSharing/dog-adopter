@@ -1,9 +1,12 @@
-import React from 'react';
-import { Outlet, useOutletContext } from 'react-router-dom';
+import React, {useState} from 'react';
 import '../Css/PetCard.css'
 
 function DogCard({ dog, onDeleteDog, }) {
-    
+    const [isAdopted, setIsAdopted] = useState(false);
+
+    const handleToggleAdopt = () => {
+        setIsAdopted(prevIsAdopted => !prevIsAdopted)
+    }
 
     return (
     <div className="pet-card">
@@ -18,8 +21,7 @@ function DogCard({ dog, onDeleteDog, }) {
         <div className="card-content">
             <h2 className="card-name">{dog.name}</h2>
             
-              <button className="adopt-button">Adopt!</button>
-            <button className="rehome-button">Rehome</button>
+              <button className={isAdopted ? "rehome-button" : "adopt-button"} onClick={handleToggleAdopt}>{isAdopted ? "Rehome" : "Adopt"}</button>
         </div>
     </div>
     )

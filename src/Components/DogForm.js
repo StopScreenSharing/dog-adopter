@@ -19,7 +19,7 @@ function DogForm({onAddDog}) {
 
      const handleSubmit = (e) => {
         e.preventDefault();
-        onAddDog(formData,);
+        onAddDog(formData);
         setFormData({
             name: '',
             image: '',

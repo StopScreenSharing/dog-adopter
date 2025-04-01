@@ -1,6 +1,5 @@
 import React, {useState} from "react";
-import { useOutletContext } from "react-router-dom";
-import '../Css/DogForm.css';
+import '../Css/Form.css';
 
 function DogForm({onAddDog}) {
     
@@ -20,7 +19,7 @@ function DogForm({onAddDog}) {
 
      const handleSubmit = (e) => {
         e.preventDefault();
-        onAddDog(formData);
+        onAddDog(formData,);
         setFormData({
             name: '',
             image: '',
@@ -30,8 +29,8 @@ function DogForm({onAddDog}) {
     return (
         <form className="form" onSubmit= {handleSubmit}>
             <h3 className="h3">Upload Dog</h3>
-            <label className="dog-name">
-                <input type="text" className="input" name="name" placeholder="Dog name" value={formData.name} onChange={handleChange}/>
+            <label className="name">
+                <input type="text" className="input" name="name" placeholder="Pet name" value={formData.name} onChange={handleChange}/>
             </label>
             <label className="image">
                 <input type="text" className="input" name="image" placeholder="Image" value={formData.image} onChange={handleChange}/>

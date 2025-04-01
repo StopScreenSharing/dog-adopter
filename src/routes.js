@@ -1,8 +1,8 @@
 import App from "./Components/App";
 import Home from "./Components/Home";
-import AdoptPage from "./Components/AdoptPage";
-import MyDogs from "./Components/MyDogs";
+import CatsPage from "./Components/CatsPage";
 import ErrorPage from "./Components/ErrorPage";
+import DogsPage from "./Components/DogsPage";
 
 const routes = [
    {
@@ -16,12 +16,12 @@ const routes = [
                 element: <Home />
             },
             {
-                path: "/adoptpage",
-                element: <AdoptPage />
+                path: "/dogspage",
+                element: <DogsPage/>
             },
             {
-                path: "/mydogs",
-                element: <MyDogs />
+                path: "/catspage",
+                element: <CatsPage />
             },
         ]
     }

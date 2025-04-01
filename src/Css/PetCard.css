@@ -1,4 +1,4 @@
-.dog-card {
+.pet-card {
     position: relative;
     border: 3px solid rgba(65, 203, 11, 0.734);
     background-color: rgba(127, 251, 32, 0.399);
@@ -12,11 +12,11 @@
 .card-content{
     padding: 15px;
 }
-.dog-card-image{
+.card-image{
     width: 100%;
     height: auto;
 }
-.dog-card-name{
+.card-name{
     color: rgb(19, 123, 20);
 }
 .adopt-button {

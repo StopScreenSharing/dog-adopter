@@ -1,17 +1,24 @@
 import React from "react";
 import { useOutletContext } from "react-router-dom";
+import DogForm from "./DogForm";
 import DogCard from "./DogCard";
-import '../Css/DogsPage.css';
+import '../Css/Page.css';
 
 function DogsPage() {
-   const { dogs, onAddDog, onDeleteDog } = useOutletContext();
+   const { dogs, onDeleteDog, onAddDog } = useOutletContext();
 
     return (
- <div className="dog-container">
-    {dogs.map((dog) => (
-          <DogCard key={dog.id} dog={dog} onDeleteDog={onDeleteDog} onAddDog={onAddDog}/>
-    ))}
- </div>
+      <div className="form">
+         <div className="form">
+            <DogForm onAddDog={onAddDog} />
+
+         </div>
+         <div className="container">
+            {dogs.map((dog) => (
+                  <DogCard key={dog.id} dog={dog} onDeleteDog={onDeleteDog} />
+            ))}
+         </div>
+      </div>
  )
 }
 

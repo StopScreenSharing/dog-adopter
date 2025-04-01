@@ -11,12 +11,12 @@ function NavBar() {
                 Home
             </NavLink>
 
-            <NavLink to="/adoptpage" className="nav-link">
-                Adopt Page
+            <NavLink to="/dogspage" className="nav-link">
+                Dogs
             </NavLink>
 
-            <NavLink to="/mydogs" className="nav-link">
-                My Dogs
+            <NavLink to="/catspage" className="nav-link">
+                Cats
             </NavLink>
         </nav>
     );

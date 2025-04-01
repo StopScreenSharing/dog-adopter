@@ -6,12 +6,12 @@ import '../Css/App.css';
 
 function App() {
   const [dogs, setDogs] = useState([]);
-  const [isClicked, setisClicked ] = useState(true);
-  
+  const [cats, setCats] = useState([]);
+    
       useEffect(() => {
           fetch('http://localhost:3000/dogs')
           .then(r => r.json())
-          .then((dogs) => setDogs(dogs))
+          .then(dogs => setDogs(dogs))
       }, []);
   
       const handleAddDog = (newDog) => {
@@ -20,14 +20,11 @@ function App() {
           headers: {
               'Content-Type': 'application/json'
           },
-          body: JSON.stringify({
-              name: newDog.name,
-              image: newDog.image
-          })
+          body: JSON.stringify(newDog)
       })
       .then(response => response.json())
-      .then(addedDogs => {
-          setDogs([...dogs, addedDogs]);
+      .then(addedDog => {
+          setDogs([...dogs, addedDog]);
       });
   };
   
@@ -39,14 +36,25 @@ function App() {
       setDogs(dogs.filter(dog => dog.id !== dogId));
     })
   }
+
+  useEffect(() => {
+    fetch('http://localhost:3000/cats')
+    .then(r => r.json())
+    .then(cats => setCats(cats))
+  }, [])
   
   return (
    <div className='app'>
-    <h1 className='title'>🐾 Dog Adopter 🐾</h1>
+    <h1 className='title'>🐾 Pet Adopter 🐾</h1>
       <header>
         <NavBar />
       </header>
-      <Outlet context={{ dogs: dogs, onAddDog: handleAddDog, onDeleteDog: handleDeleteDog }} />
+      <Outlet context={{ 
+        dogs: dogs, 
+        onAddDog: handleAddDog, 
+        onDeleteDog: handleDeleteDog,
+        cats: cats
+        }} />
    </div>
   );
 }
